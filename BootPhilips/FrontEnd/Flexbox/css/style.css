@@ -1,0 +1,81 @@
+.flex{
+    max-width: 300px;/*tamanho maximo do container*/
+    padding: 10px;
+    border: 2px solid black;
+    /* com o flex cada item dentro do container passa tocupar o maximo do conteúdo e reseita a orientação rm linha */
+    display: flex;
+}
+.item{
+    background: rgb(255, 32, 77);
+    margin: 5px;
+}
+/* 
+FLEX-DIRECTION => é a propriedade que estabelece o eixo 
+principal do container, definindo assim a direção que 
+os flex-items são colocados no flex container..tipos:
+    row => direção em linha, da esquerda para a direita
+    row-reverse =>ordenação inversa 
+    column => ordenação em coluna, de cima para baixo
+    column-reverse => ordenação em coluna, de baixo pra cima
+*/
+
+.flex-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+.flex-item{
+    background: cornflowerblue;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: wheat;
+    text-align: center;
+    margin: 5px;
+}
+.row{
+    flex-direction: row;
+}
+.row_reverse{
+    flex-direction: row-reverse;
+}
+.column{
+    float: left;
+    flex-direction: column;
+}
+
+/* 
+FLEX-WRAP => é a propriedade que define se os 
+items devem ou não quebrar a linha 
+*/
+.wrap-container{
+    display: flex;
+    height: 150px;
+    border: 1px solid gray;
+    width: 300px;
+}
+.wrap-item{
+    font-size: 24px;
+    height: 50%;
+    text-align: center;
+    min-width: 100px;
+    color: wheat;
+    line-height: 50px;
+}
+.nowrap{
+    flex-wrap: nowrap;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.blue{
+    background: aquamarine;
+}
+.black{
+    background: #000;
+}
+.blue2{
+    background: darkblue;
+}
